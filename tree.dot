@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Solar energy <= -1.0\ngini = 0.75\nsamples = 5686\nvalue = [1422, 1421, 1421, 1422]\nclass = very low"] ;
+1 [label="Num of members <= 2.5\ngini = 0.59\nsamples = 1169\nvalue = [665, 305, 153, 46]\nclass = very low"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Num of members <= 1.5\ngini = 0.544\nsamples = 843\nvalue = [516, 223, 88, 16]\nclass = very low"] ;
+1 -> 2 ;
+3 [label="gini = 0.503\nsamples = 469\nvalue = [307, 116, 40, 6]\nclass = very low"] ;
+2 -> 3 ;
+4 [label="gini = 0.589\nsamples = 374\nvalue = [209, 107, 48, 10]\nclass = very low"] ;
+2 -> 4 ;
+5 [label="Num of members <= 4.5\ngini = 0.68\nsamples = 326\nvalue = [149, 82, 65, 30]\nclass = very low"] ;
+1 -> 5 ;
+6 [label="gini = 0.66\nsamples = 263\nvalue = [127, 66, 52, 18]\nclass = very low"] ;
+5 -> 6 ;
+7 [label="gini = 0.735\nsamples = 63\nvalue = [22, 16, 13, 12]\nclass = very low"] ;
+5 -> 7 ;
+8 [label="Num of members <= 1.5\ngini = 0.739\nsamples = 4517\nvalue = [757, 1116, 1268, 1376]\nclass = very high"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Income <= 5.5\ngini = 0.723\nsamples = 835\nvalue = [287, 250, 193, 105]\nclass = very low"] ;
+8 -> 9 ;
+10 [label="gini = 0.719\nsamples = 765\nvalue = [273, 225, 177, 90]\nclass = very low"] ;
+9 -> 10 ;
+11 [label="gini = 0.734\nsamples = 70\nvalue = [14, 25, 16, 15]\nclass = low"] ;
+9 -> 11 ;
+12 [label="Num of members <= 3.5\ngini = 0.724\nsamples = 3682\nvalue = [470, 866, 1075, 1271]\nclass = very high"] ;
+8 -> 12 ;
+13 [label="gini = 0.733\nsamples = 2498\nvalue = [359, 631, 762, 746]\nclass = high"] ;
+12 -> 13 ;
+14 [label="gini = 0.685\nsamples = 1184\nvalue = [111, 235, 313, 525]\nclass = very high"] ;
+12 -> 14 ;
+}
